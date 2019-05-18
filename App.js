@@ -29,6 +29,7 @@ export default class App extends React.Component {
     setTimeout(() => {
       if (!this.state.stop) {
         Alert.alert("Farting!");
+        this.soundFart();
         this.fart();
       }
     }, 3000);
